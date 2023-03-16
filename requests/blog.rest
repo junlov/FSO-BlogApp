@@ -1,0 +1,15 @@
+
+### Get all posts
+GET http://localhost:3003/api/blogs/
+
+### Post new blog post
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+
+{
+  "title": "Eat or Be Eaten",
+  "author": "Mark Brewerer",
+  "url": "http://www.markiemark.com",
+  "likes": 1445
+
+}
