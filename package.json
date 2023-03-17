@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "no test"
+    "test": "jest --verbose"
   },
   "author": "junlov",
   "license": "ISC",
@@ -15,9 +15,14 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "http": "^0.0.1-security",
+    "lodash": "^4.17.21",
     "mongoose": "^7.0.2"
   },
   "devDependencies": {
+    "jest": "^29.5.0",
     "nodemon": "^2.0.21"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
