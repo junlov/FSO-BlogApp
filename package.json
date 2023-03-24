@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "jest --verbose"
+    "test": "jest --verbose --detectOpenHandles"
   },
   "author": "junlov",
   "license": "ISC",
@@ -20,7 +20,8 @@
   },
   "devDependencies": {
     "jest": "^29.5.0",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "supertest": "^6.3.3"
   },
   "jest": {
     "testEnvironment": "node"
