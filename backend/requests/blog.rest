@@ -7,9 +7,8 @@ POST http://localhost:3003/api/blogs/
 Content-Type: application/json
 
 {
-  "title": "Eat or Be Eaten",
-  "author": "Mark Brewerer",
-  "url": "http://www.markiemark.com",
-  "likes": 1445
-
-}
+    "title": "Gangstas R 4 Eva",
+    "author": "Tupac Nokur",
+    "url": "https://www.tupacsthots.com",
+    "likes": 1170
+  }
