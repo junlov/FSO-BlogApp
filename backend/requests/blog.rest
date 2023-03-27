@@ -2,6 +2,9 @@
 ### Get all posts
 GET http://localhost:3003/api/blogs/
 
+### Get specific post
+GET http://localhost:3003/api/blogs/6421bb5b98f76b49ca59a2ba
+
 ### Post new blog post
 POST http://localhost:3003/api/blogs/
 Content-Type: application/json
@@ -9,6 +12,20 @@ Content-Type: application/json
 {
     "title": "Gangstas R 4 Eva",
     "author": "Tupac Nokur",
+    "url": "https://www.tupacsthots.com",
+    "likes": 1170
+  }
+
+### Delete a post
+DELETE http://localhost:3003/api/blogs/6421bbf201b1184beef02f92
+
+### Update a blog post
+PUT http://localhost:3003/api/blogs/6421b3190068e96adcf3475e
+Content-Type: application/json
+
+{
+    "title": "All Eyez On Me",
+    "author": "Tupac Shakur",
     "url": "https://www.tupacsthots.com",
     "likes": 1170
   }
