@@ -8,12 +8,14 @@ GET http://localhost:3003/api/blogs/6421bb5b98f76b49ca59a2ba
 ### Post new blog post
 POST http://localhost:3003/api/blogs/
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlN1cGVybWFuIiwiaWQiOiI2NDIyZmZiYmU5ZGVkMTczMTM0ZDM2ZTEiLCJpYXQiOjE2ODAwMTk1OTIsImV4cCI6MTY4MDAyMzE5Mn0.0a0xBw_9dtdV_ySQbUxhKjkkD_wEDs9wBjwoyXYsvdc
 
 {
-    "title": "Gangstas R 4 Eva",
-    "author": "Tupac Nokur",
-    "url": "https://www.tupacsthots.com",
-    "likes": 1170
+    "title": "Super Lost in Time",
+    "author": "Clark Kent",
+    "url": "https://www.superman.com/lost-in-time",
+    "likes": 303,
+    "user": "6422ffbbe9ded173134d36e1"
   }
 
 ### Delete a post

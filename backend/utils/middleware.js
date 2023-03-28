@@ -34,6 +34,7 @@ const errorHandler = (error, request, response, next) => {
 //
 //
 const requestLogger = (request, response, next) => {
+  logger.info("Token", request.token);
   logger.info("Method:", request.method);
   logger.info("Path:", request.path);
   logger.info("Body:", request.body);
@@ -41,8 +42,23 @@ const requestLogger = (request, response, next) => {
   next();
 };
 
+//
+//
+// * Token Extractor
+//
+//
+const tokenExtractor = (request, response, next) => {
+  const authorization = request.get("authorization");
+  if (authorization && authorization.toLowerCase().startsWith("bearer ")) {
+    request["token"] = authorization.substring(7);
+  }
+
+  next();
+};
+
 module.exports = {
   requestLogger,
   unknownEndpoint,
   errorHandler,
+  tokenExtractor,
 };
